@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "test": "npx cypress open",
+    "test:1-LOGIN": "npx cypress open --spec 'cypress/e2e/1-LOGIN'",
+    "test:2-USUARIOS": "npx cypress open --spec 'cypress/e2e/2-USUARIOS'",
+    "test:3-PRODUTOS": "npx cypress open --spec 'cypress/e2e/3-PRODUTOS'",
+    "test:4-CARRINHOS": "npx cypress open --spec 'cypress/e2e/4-CARRINHOS'"
   },
   "author": "Adolfo Athayde",
   "license": "ISC",

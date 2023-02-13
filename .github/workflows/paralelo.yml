@@ -1,0 +1,39 @@
+name: Cypress Test em paralelo
+on: [push]
+jobs:
+ Cypress-Test-1-LOGIN:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout GitCode
+       uses: actions/checkout@v3.3.0
+     - name: Cypress.io
+       uses: cypress-io/github-action@v5.0.8
+          with:
+            command: npm run test:1-LOGIN
+ Cypress-Test-2-USUARIOS:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout GitCode
+       uses: actions/checkout@v3.3.0
+     - name: Cypress.io
+       uses: cypress-io/github-action@v5.0.8
+          with:
+            command: npm run test:2-USUARIOS
+ Cypress-Test-3-PRODUTOS:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout GitCode
+       uses: actions/checkout@v3.3.0
+     - name: Cypress.io
+       uses: cypress-io/github-action@v5.0.8
+          with:
+            command: npm run test:3-PRODUTOS
+ Cypress-Test-4-CARRINHOS:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout GitCode
+       uses: actions/checkout@v3.3.0
+     - name: Cypress.io
+       uses: cypress-io/github-action@v5.0.8
+          with:
+            command: npm run test:4-CARRINHOS

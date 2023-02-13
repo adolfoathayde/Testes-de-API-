@@ -9,7 +9,7 @@ jobs:
      - name: Cypress.io
        uses: cypress-io/github-action@v5.0.8
        with:
-         command: npm run test:1-LOGIN
+         command: npx cypress open:1-LOGIN
  Cypress-Test-2-USUARIOS:
    runs-on: ubuntu-latest
    steps:
@@ -18,7 +18,7 @@ jobs:
      - name: Cypress.io
        uses: cypress-io/github-action@v5.0.8
        with:
-         command: npm run test:2-USUARIOS
+         command: npx cypress open:2-USUARIOS
  Cypress-Test-3-PRODUTOS:
    runs-on: ubuntu-latest
    steps:
@@ -27,7 +27,7 @@ jobs:
      - name: Cypress.io
        uses: cypress-io/github-action@v5.0.8
        with:
-         command: npm run test:3-PRODUTOS
+         command: npx cypress open:3-PRODUTOS
  Cypress-Test-4-CARRINHOS:
    runs-on: ubuntu-latest
    steps:
@@ -36,4 +36,4 @@ jobs:
      - name: Cypress.io
        uses: cypress-io/github-action@v5.0.8
        with:
-         command: npm run test:4-CARRINHOS
+         command: npx cypress open:4-CARRINHOS

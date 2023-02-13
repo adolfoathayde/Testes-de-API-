@@ -1,7 +1,7 @@
 describe('Login realizado com sucesso', () => {
   const { novoUsuario } = require('../../fixtures/usuarios.factory');
 
-  it('fazer com sucesso', () => {
+  it('fazer com sucesso.', () => {
     cy.CadastrarUsuarios(novoUsuario())
     cy.LoginAleatorio()
       .should(({ status, body }) => {

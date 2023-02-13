@@ -1,0 +1,18 @@
+{
+  "name": "testes-de-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Adolfo Athayde",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.2.0",
+    "cypress-plugin-api": "^2.9.0"
+  },
+  "devDependencies": {
+    "faker-br": "^0.4.1"
+  }
+}
